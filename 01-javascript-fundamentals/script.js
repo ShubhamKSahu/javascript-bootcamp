@@ -1,9 +1,6 @@
-let js = "Amazing";
-if (js === "Amazing") {
-  alert("Javascript is FUN!");
-}
-console.log("Hii");
-let firstName = "Sai";
-let _firstName = "Sai";
-let FisrtName = "Sai"; //not recommended
-// let 3_firstName = "Sai"; invalid
+let country = "India";
+let continent = "Asia";
+let population = 1250000000;
+console.log(typeof country);
+console.log(typeof continent);
+console.log(typeof population);
