@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+.my-div{
+    height: 50px;
+    width: 300px;
+    border: 1px solid black;
+    margin: auto;
+}
+.my-btn{
+    padding: 5px;
+    margin: 5px;
+}
