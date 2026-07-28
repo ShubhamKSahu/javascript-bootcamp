@@ -33,14 +33,10 @@
 //     addBackgroundColor.call(this);
 // })
 
-let form = document.querySelector("form");
-form.addEventListener("submit", function(event){
-    event.preventDefault();
-    let user = this.elements[0];
-
-     let password = this.elements[1];
-     console.log("username is: ", user.value);
-     console.log("password is: ", password.value);
-    alert(`Hi, ${user.value} your password is set to ${password.value}`);
-    console.dir(form);
-})
+    let header = document.querySelector(".header");
+    let input = document.querySelector(".inputName");
+    input.addEventListener("input", ()=>{
+        let filteredValue = input.value.replace(/[^a-zA-Z ]/g, "");
+        input.value = filteredValue;
+        header.textContent = filteredValue;
+    })
