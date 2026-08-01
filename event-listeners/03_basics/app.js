@@ -33,10 +33,20 @@
 //     addBackgroundColor.call(this);
 // })
 
-    let header = document.querySelector(".header");
-    let input = document.querySelector(".inputName");
-    input.addEventListener("input", ()=>{
-        let filteredValue = input.value.replace(/[^a-zA-Z ]/g, "");
-        input.value = filteredValue;
-        header.textContent = filteredValue;
+let div = document.querySelector("div");
+let ul = document.querySelector("ul");
+let lis = document.querySelectorAll("li");
+div.addEventListener("click", (event) => {
+    event.stopPropagation();
+    console.log("div is clicked");
+});
+ul.addEventListener("click", (event) => {
+    event.stopPropagation();
+    console.log("ul is clicked");
+}) ;  
+for (li of lis){
+    li.addEventListener("click", (event)=>{
+        event.stopPropagation();
+        console.log("li is clicked");
     })
+} 

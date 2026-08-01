@@ -1,8 +1,21 @@
 
-.box{
+/* .box{
     height: 900px;
     border: 1px solid black;
 }
 body{
     overflow: scroll;
+} */
+
+div {
+    background-color: rgb(197, 151, 94);
+}
+ul {
+    background-color: aquamarine;
+    width: 50px;
+
+}
+li {
+    background-color: blueviolet;
+    width: 30px;
 }
